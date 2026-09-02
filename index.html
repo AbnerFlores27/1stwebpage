@@ -7,11 +7,10 @@
     <title>1st Webpage</title>
     <style>
       :root {
-        color-scheme: light;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-        color: #172033;
-        background: purple;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: #182230;
+        background: #f3f7fb;
       }
 
       body {
@@ -19,36 +18,62 @@
         min-height: 100vh;
         display: grid;
         place-items: center;
+        background:
+          radial-gradient(circle at 15% 10%, rgb(171 226 255 / 55%), transparent 34%),
+          radial-gradient(circle at 90% 85%, rgb(216 195 255 / 55%), transparent 32%),
+          #f3f7fb;
       }
 
       main {
-        width: min(90vw, 42rem);
-        padding: 3rem;
+        width: min(90vw, 38rem);
+        padding: clamp(2rem, 7vw, 4rem);
         text-align: center;
-        background: #ffffff;
-        border: 1px solid #dfe6f0;
-        border-radius: 1rem;
-        box-shadow: 0 1rem 3rem rgb(23 32 51 / 10%);
+        background: rgb(255 255 255 / 88%);
+        border: 1px solid rgb(255 255 255 / 90%);
+        border-radius: 1.5rem;
+        box-shadow: 0 1.5rem 4rem rgb(50 74 100 / 15%);
+        backdrop-filter: blur(0.75rem);
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: #58728d;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
       }
 
       h1 {
-        margin: 0 0 0.75rem;
-        font-size: clamp(2rem, 6vw, 3.5rem);
-        color: green;
+        margin: 0;
+        color: #182230;
+        font-size: clamp(2.5rem, 10vw, 5rem);
+        letter-spacing: -0.07em;
+        line-height: 0.95;
       }
 
       p {
-        margin: 0;
-        color: #526078;
-        font-size: 1.1rem;
+        margin: 1.25rem 0 0;
+        color: #58728d;
+        font-size: 1rem;
         line-height: 1.6;
+      }
+
+      .accent {
+        width: 3.5rem;
+        height: 0.25rem;
+        margin: 2rem auto 0;
+        border-radius: 99rem;
+        background: linear-gradient(90deg, #59b7e8, #9b82ed);
       }
     </style>
   </head>
   <body>
     <main>
-        <h1>abner flores?</h1>
-        <p style="color: black;">may 21st, 2012</p>
+      <p class="eyebrow">The beginning</p>
+      <h1>abner flores?</h1>
+      <p>may 21st, 2012</p>
+      <div class="accent" aria-hidden="true"></div>
     </main>
   </body>
 </html>
