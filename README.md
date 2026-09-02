@@ -3,7 +3,7 @@
 ## Webpage design
 
 - Heading: `abner flores?` in blue
-- Background: orange
+- Background: midnight blue
 - Birthday: `may 21st, 2012` in black
 
 ## HTML and CSS
@@ -11,11 +11,11 @@
 ```html
 <style>
   :root {
-    background: orange;
+    background: midnightblue;
   }
 
   body {
-    background: orange;
+    background: midnightblue;
   }
 
   h1 {
