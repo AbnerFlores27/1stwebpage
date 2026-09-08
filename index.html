@@ -22,7 +22,7 @@
       }
 
       main {
-        width: min(90vw, 38rem);
+        width: min(90vw, 50rem);
         padding: clamp(2rem, 7vw, 4rem);
         text-align: center;
         background: midnightblue;
@@ -32,14 +32,51 @@
         backdrop-filter: blur(0.75rem);
       }
 
-      .profile-photo {
+      .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .photo-link {
         display: block;
-        width: min(100%, 22rem);
+      }
+
+      .gallery-photo {
+        display: block;
+        width: 100%;
         aspect-ratio: 4 / 3;
-        margin: 0 auto 2rem;
         object-fit: cover;
         border-radius: 1rem;
         box-shadow: 0 1rem 2.5rem rgb(25 25 112 / 20%);
+      }
+
+      .wide-photo-placeholder {
+        grid-column: 1 / -1;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        aspect-ratio: 8 / 3;
+        color: #b8c5ff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        background: #202080;
+        border: 2px dashed #4da3ff;
+        border-radius: 1rem;
+      }
+
+      @media (max-width: 36rem) {
+        .photo-gallery {
+          grid-template-columns: 1fr;
+        }
+
+        .wide-photo-placeholder {
+          grid-column: 1;
+          aspect-ratio: 4 / 3;
+        }
       }
 
       .eyebrow {
@@ -87,18 +124,37 @@
   </head>
   <body>
     <main>
-      <a
-        href="https://www.britannica.com/facts/Mike-Trout"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="View Mike Trout facts on Britannica"
-      >
-        <img
-          class="profile-photo"
-          src="https://cdn.britannica.com/88/221888-050-7F121E32/Baseball-player-Mike-Trout-2020.jpg"
-          alt="Baseball player Mike Trout"
-        />
-      </a>
+      <div class="photo-gallery">
+        <a
+          class="photo-link"
+          href="https://www.britannica.com/facts/Mike-Trout"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View Mike Trout facts on Britannica"
+        >
+          <img
+            class="gallery-photo"
+            src="https://cdn.britannica.com/88/221888-050-7F121E32/Baseball-player-Mike-Trout-2020.jpg"
+            alt="Baseball player Mike Trout"
+          />
+        </a>
+        <a
+          class="photo-link"
+          href="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="View the golden retriever photo source"
+        >
+          <img
+            class="gallery-photo"
+            src="images/cute-dog.jpg"
+            alt="Golden retriever puppy wearing an orange collar"
+          />
+        </a>
+        <div class="wide-photo-placeholder" role="img" aria-label="Placeholder for the next photo">
+          Photo link coming soon
+        </div>
+      </div>
       <p class="eyebrow">The beginning</p>
       <h1>ABNER FLORES</h1>
       <p class="birthday">
