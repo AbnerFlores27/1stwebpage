@@ -1,24 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
   <title id="title">ABNER FLORES</title>
-  <desc id="description">A golden retriever puppy, blue ABNER FLORES heading, and gold birthday on a midnight-blue background.</desc>
+  <desc id="description">A golden retriever thumbnail beside an empty box for the next image, with a blue ABNER FLORES heading and gold birthday on a midnight-blue background.</desc>
   <defs>
     <clipPath id="dog-photo">
-      <rect x="350" y="60" width="500" height="620" rx="32"/>
+      <rect x="180" y="55" width="360" height="400" rx="28"/>
     </clipPath>
   </defs>
-  <rect width="1200" height="1000" fill="#191970"/>
+  <rect width="1200" height="760" fill="#191970"/>
   <image
     href="cute-dog.jpg"
-    x="350"
-    y="60"
-    width="500"
-    height="620"
+    x="180"
+    y="55"
+    width="360"
+    height="400"
     preserveAspectRatio="xMidYMid slice"
     clip-path="url(#dog-photo)"
   />
+  <rect
+    x="660"
+    y="55"
+    width="360"
+    height="400"
+    rx="28"
+    fill="#202080"
+    stroke="#4da3ff"
+    stroke-width="5"
+    stroke-dasharray="18 14"
+  />
+  <text
+    x="840"
+    y="245"
+    fill="#b8c5ff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="25"
+    font-weight="700"
+    letter-spacing="3"
+    text-anchor="middle"
+  >NEXT IMAGE</text>
+  <text
+    x="840"
+    y="285"
+    fill="#b8c5ff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="20"
+    text-anchor="middle"
+  >thumbnail</text>
   <text
     x="600"
-    y="810"
+    y="590"
     fill="#4da3ff"
     font-family="Arial, Helvetica, sans-serif"
     font-size="78"
@@ -27,7 +56,7 @@
   >ABNER FLORES</text>
   <text
     x="600"
-    y="895"
+    y="675"
     fill="rgb(207, 189, 33)"
     font-family="Arial, Helvetica, sans-serif"
     font-size="30"
