@@ -1,0 +1,1 @@
+- [Styled GitHub README](styled-github-readme.md) — use a committed banner image for colors because GitHub strips README CSS.

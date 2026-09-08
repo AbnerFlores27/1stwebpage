@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">ABNER FLORES</title>
+  <desc id="description">A blue ABNER FLORES heading and underlined black birthday on a light card over a midnight-blue background.</desc>
+  <rect width="1200" height="420" fill="#191970"/>
+  <text
+    x="600"
+    y="205"
+    fill="#4da3ff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="78"
+    font-weight="800"
+    text-anchor="middle"
+  >ABNER FLORES</text>
+  <rect x="455" y="235" width="290" height="62" rx="31" fill="#ffffff"/>
+  <text
+    x="600"
+    y="275"
+    fill="#000000"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="30"
+    text-anchor="middle"
+    text-decoration="underline"
+  >may 21st 2012</text>
+</svg>
